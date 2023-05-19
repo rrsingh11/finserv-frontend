@@ -30,11 +30,11 @@ function Home() {
       
       return (
         <div className="p-12">
-          <div className='flex '>
-            <h1 className='text-4xl text-center'>Employees</h1>
+          <div className='flex justify-around'>
+            <h1 className='text-4xl text-center'>Employee List</h1>
             <form className='flex justify-center'>
-              <input className='border-2 border-black' type='text' placeholder='Search' />
-              <button className='border-2 border-black' type='submit'>Search</button>
+              <input className='border-1 border-black p-2 rounded-l-lg' type='text' placeholder='Search' />
+              <button className='bg-blue-500 p-2 text-white rounded-r-lg ' type='submit'>Search</button>
             </form>
           </div>
           <div className='mt-12 grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
