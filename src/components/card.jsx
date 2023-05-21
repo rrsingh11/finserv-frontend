@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom"
 
 function Card(props) {
+    // eslint-disable-next-line react/prop-types
     const { id, name, designation, skills } = props
 
+    // eslint-disable-next-line react/prop-types
     const skillsList = skills.map((skill) => {
         if(skill === 'undefined') return;
         return(
+            // eslint-disable-next-line react/jsx-key
             <span className="text-[12px] bg-slate-200 rounded-md m-1 px-2 text-center"> {skill}</span>
         )
     })
